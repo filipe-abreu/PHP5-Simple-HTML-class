@@ -1,0 +1,20 @@
+This PHP5 class is a really basic one to build HTML output in an easy way.
+
+It allows you to edit html output (page title, javascript, css ...) in your 
+code even if you have already "sent" html output.
+
+You just have to call Html singleton method and start the buffering with 
+start() method.
+
+Example:
+
+<?php
+require_once('Html.php');
+Html::getInstance()
+	->setApplicationName('A beautifull app')
+	->setPageName('My page name')
+	->start();
+
+
+echo time();
+?>
