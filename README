@@ -6,7 +6,7 @@ code even if you have already "sent" html output.
 You just have to call Html singleton method and start the buffering with 
 start() method.
 
-Example:
+Sample of use:
 
 <?php
 require_once('Html.php');
